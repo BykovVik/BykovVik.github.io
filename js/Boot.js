@@ -1,5 +1,5 @@
 var Ball = {
-    _WIDTH: 480,
+    _WIDTH: 580,
     _HEIGHT: 320
 };
 
