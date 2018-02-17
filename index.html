@@ -1,0 +1,53 @@
+<!--<!DOCTYPE html>-->
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ОТБОЙНИК</title>
+    <style> body { margin: 0; background: #333; }</style>
+    
+    <script src="js/phaser.min.js"></script>
+    <script src="js/Boot.js"></script>
+    <script src="js/Preloader.js"></script>
+    <script src="js/MainMenu.js"></script>
+    <script src="js/about.js"></script>
+    <script src="js/resources.js"></script>
+    <script src="js/Game.js"></script>
+    <script src="js/level2.js"></script>
+    <script src="js/level3.js"></script>
+    <script src="js/level4.js"></script>
+    <script src="js/level5.js"></script>
+    <script src="js/level6.js"></script>
+    <script src="js/level7.js"></script>
+    <script src="js/level8.js"></script>
+    <script src="js/level9.js"></script>
+    <script src="js/level10.js"></script>
+    <script src="js/GameOver.js"></script>
+    <script src="js/finish.js"></script>
+</head>
+
+<script>
+(function() {
+    var game = document.getElementById('game');
+    game = new Phaser.Game(480, 320, Phaser.AUTO, 'game');
+    game.state.add('Boot', Ball.Boot);
+    game.state.add('Preloader', Ball.Preloader);
+    game.state.add('MainMenu', Ball.MainMenu);
+    game.state.add('about', Ball.about);
+    game.state.add('resources', Ball.resources);
+    game.state.add('Game', Ball.Game);
+    game.state.add('GameOver', Ball.GameOver);
+    game.state.add('level2', Ball.level2);
+    game.state.add('level3', Ball.level3);
+    game.state.add('level4', Ball.level4);
+    game.state.add('level5', Ball.level5);
+    game.state.add('level6', Ball.level6);
+    game.state.add('level7', Ball.level7);
+    game.state.add('level8', Ball.level8);
+    game.state.add('level9', Ball.level9);
+    game.state.add('level10', Ball.level10);
+    game.state.add('finish', Ball.finish);
+    game.state.start('Boot');
+})();
+</script>
+</body>
+</html>
